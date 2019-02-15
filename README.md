@@ -1,0 +1,2 @@
+# Android_ShortcutsDemo
+安卓API25以上的Shortcuts Demo
