@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--shortcutId 菜单的Id-->
+    <!--enabled 菜单是否可用 长按时是否显示该项菜单-->
+    <!--icon 快捷键图标-->
+    <!--shortcutShortLabel 菜单短标题 默认显示的是长标题 如果显示不下就显示短标题 当快捷菜单拉到桌面时显示短标题-->
+    <!--shortcutLongLabel 菜单长标题 默认显示-->
+    <!--shortcutDisabledMessage 菜单enabled为false时 桌面的快捷菜单会变灰 点击显示该处配置的提示信息-->
+    <!--以上三个配置只能用@string资源配置，如果直接用字符串设置 编译会报错-->
+    <!--intent 意图 targetPackage：配置包名 targetClass：打开的目标Activity action：一定要配置，不然会崩溃-->
+    <!--categories 此处配置项官网只有一个值android.shortcut.conversation
+    官网解释：Shortcut category for messaging related actions, such as chat.-->
+
+    <shortcut
+        android:shortcutId="menu1"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label1"
+        android:shortcutLongLabel="@string/long_label1"
+        android:shortcutDisabledMessage="@string/disable_label">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.lovcreate.shortcutmenu"
+            android:targetClass="com.lovcreate.shortcutmenu.ShortcutActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="menu2"
+        android:enabled="false"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/short_label2"
+        android:shortcutLongLabel="@string/long_label2"
+        android:shortcutDisabledMessage="@string/disable_label">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.lovcreate.shortcutmenu"
+            android:targetClass="com.lovcreate.shortcutmenu.ShortcutActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+</shortcuts>

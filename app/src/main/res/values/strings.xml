@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShortCutMenu</string>
+    <string name="short_label1">菜单1</string>
+    <string name="short_label2">菜单2</string>
+    <string name="long_label1">菜单01</string>
+    <string name="long_label2">菜单02</string>
+    <string name="disable_label">暂无</string>
+</resources>
